@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Behind The Glamour | You're Makeup Luxury Story</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement">
+    <span class="sparkle">✦</span>
+    <span>COMPLIMENTARY VIP SHIPPING ON ORDERS $50+ & SECRET SAMPLES WITH EVERY DROP</span>
+    <span class="sparkle">✦</span>
+  </div>
+
+  <!-- PREMIUM NAVBAR -->
+  <header class="navbar">
+    <div class="nav-container">
+      <!-- Left: Logo -->
+      <a href="home.html" class="navbar-brand">
+        <span class="logo-youre">YOU'RE</span>
+        <span class="logo-makeup">MAKEUP</span>
+      </a>
+
+      <!-- Center: Menu Links -->
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="home.html" class="nav-link">Home</a></li>
+          <li><a href="shop.html" class="nav-link">Shop</a></li>
+          <li><a href="about.html" class="nav-link active">About Us</a></li>
+          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right: Icons Section -->
+      <div class="nav-actions">
+        <!-- Search bar -->
+        <div class="nav-search-wrapper">
+          <input type="text" class="nav-search-input" placeholder="Search glam..." aria-label="Search glam">
+          <button class="nav-search-btn" aria-label="Search button"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <!-- Wishlist icon -->
+        <a href="shop.html" class="nav-icon-btn wishlist-btn" title="View Wishlist">
+          <i class="fa-regular fa-heart"></i>
+          <span class="wishlist-dot"></span>
+        </a>
+
+        <!-- Cart icon -->
+        <button class="nav-icon-btn cart-btn" title="Shopping Bag" aria-label="Shopping Bag">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-badge">2</span>
+        </button>
+
+        <!-- User / Login icon -->
+        <a href="index.html" class="user-btn" title="VIP Account / Sign In" aria-label="VIP Account">
+          <i class="fa-solid fa-user"></i>
+        </a>
+
+        <!-- Mobile Hamburger button -->
+        <button class="hamburger-btn" aria-label="Toggle Navigation">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Slide-In Menu Drawer -->
+  <div class="mobile-drawer-overlay"></div>
+  <aside class="mobile-nav-drawer">
+    <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,20,147,0.3); padding-bottom: 15px;">
+      <a href="home.html" class="navbar-brand">
+        <span class="logo-youre">YOU'RE</span> <span class="logo-makeup">MAKEUP</span>
+      </a>
+    </div>
+
+    <!-- Mobile Search -->
+    <div class="nav-search-wrapper" style="display: flex; width: 100%;">
+      <input type="text" class="nav-search-input" style="width: 100%;" placeholder="Search glam...">
+      <button class="nav-search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+
+    <ul class="mobile-nav-links">
+      <li><a href="home.html" class="mobile-nav-link"><span>Home</span> <i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i></a></li>
+      <li><a href="shop.html" class="mobile-nav-link"><span>Shop</span> <i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i></a></li>
+      <li><a href="about.html" class="mobile-nav-link active"><span>About Us</span> <i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i></a></li>
+      <li><a href="contact.html" class="mobile-nav-link"><span>Contact Us</span> <i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i></a></li>
+      <li><a href="index.html" class="mobile-nav-link"><span>VIP Sign In / Register</span> <i class="fa-solid fa-user" style="font-size: 12px; color: var(--hot-pink);"></i></a></li>
+    </ul>
+
+    <div style="margin-top: auto; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); font-size: 12px; color: var(--text-dim); text-align: center;">
+      <p style="color: var(--hot-pink); font-weight: 600; margin-bottom: 4px;">YOU'RE MAKEUP &copy; 2026</p>
+      <p>Luxury Glamour Redefined</p>
+    </div>
+  </aside>
+
+  <!-- About Hero -->
+  <section class="about-hero">
+    <div class="container" style="text-align: center;">
+      <span class="section-tagline">Maison De Beauté</span>
+      <h1 class="section-title">Behind The <span>Glamour</span></h1>
+      <p class="section-desc">Born from backstage runways in Paris and the vibrant neon soul of modern couture. We create beauty that empowers you to demand the spotlight.</p>
+    </div>
+  </section>
+
+  <!-- Story Section -->
+  <section class="about-story-section">
+    <div class="container">
+      <div class="about-story-grid">
+        <div class="story-img-box">
+          <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=1000&q=80" alt="You're Makeup High Glamour Editorial">
+        </div>
+
+        <div class="story-content">
+          <span class="section-tagline">Our Genesis</span>
+          <h2>Redefining Luxury Makeup For The Modern Era</h2>
+          <p>
+            Founded in Paris with a defiant studio in Beverly Hills, <strong>YOU'RE MAKEUP</strong> began with a single radical principle: luxury beauty should never force you to compromise between fierce pigment payoff and clean, skin-nurturing ingredients.
+          </p>
+          <p>
+            Tired of chalky formulas that creased under bright strobe lights, our visionary cosmetic chemists spent five years engineering our proprietary <em>Velvet-Luxe™</em> matrix. The result? Featherlight formulas with unyielding 24-hour endurance and hyper-saturated chromatic tones.
+          </p>
+          <p>
+            Today, You're Makeup stands as the ultimate sanctuary for beauty collectors, celebrity artists, and bold individuals worldwide who understand that glamour is not an afterthought—it is your signature armor.
+          </p>
+          <div style="margin-top: 30px;">
+            <a href="shop.html" class="btn btn-primary">
+              <i class="fa-solid fa-bag-shopping"></i> Experience The Vault
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 Feature Cards (Luxury Pillars) -->
+  <section class="features-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tagline">The Three Pillars</span>
+        <h2 class="section-title">Uncompromising <span>Excellence</span></h2>
+        <p class="section-desc">Every formula, compact, and brush reflects our relentless commitment to craftsmanship.</p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Feature Card 1 -->
+        <div class="feature-card">
+          <div class="feature-icon-circle">
+            <i class="fa-solid fa-leaf"></i>
+          </div>
+          <h3>Clean & Cruelty-Free</h3>
+          <p>
+            100% Leaping Bunny and PETA certified cruelty-free. We strictly exclude over 2,700 questionable ingredients, infusing every shade with nourishing squalane, camellia oil, and peptides.
+          </p>
+        </div>
+
+        <!-- Feature Card 2 -->
+        <div class="feature-card">
+          <div class="feature-icon-circle">
+            <i class="fa-solid fa-bolt-lightning"></i>
+          </div>
+          <h3>Hyper-Pigmented 24H Wear</h3>
+          <p>
+            Micro-milled Italian pigments wrapped in botanical polymers deliver instant opaque coverage with a single swipe, remaining fresh and vibrant through afterparties and dawn.
+          </p>
+        </div>
+
+        <!-- Feature Card 3 -->
+        <div class="feature-card">
+          <div class="feature-icon-circle">
+            <i class="fa-solid fa-gem"></i>
+          </div>
+          <h3>Haute Packaging</h3>
+          <p>
+            Weighted soft-touch obsidian and hot pink magnetic cases engineered to feel like fine jewelry in your hand. Eco-refillable components crafted to reduce environmental footprint.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Founder Quote Section -->
+  <section class="founder-section">
+    <div class="container">
+      <div class="founder-card">
+        <div class="founder-img-wrap">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80" alt="Elena Vance - Founder">
+        </div>
+
+        <div class="founder-quote-wrap">
+          <div class="quote-mark">&ldquo;</div>
+          <blockquote class="founder-quote-text">
+            Makeup isn't a mask to hide behind; it is a ritual of unapologetic self-worship, fierce art, and raw confidence. When you wear our pigment, you don't just enter a room—you command it.
+          </blockquote>
+          <div class="founder-name">Elena Vance</div>
+          <div class="founder-role">Founder &amp; Master Creative Director &bull; You're Makeup</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Luxury Stats Banner -->
+  <section style="padding: 60px 0; background: #050507; border-top: 1px solid rgba(255,20,147,0.2); border-bottom: 1px solid rgba(255,20,147,0.2);">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; text-align: center;">
+        <div>
+          <h3 style="font-family: var(--font-serif); font-size: 40px; color: var(--hot-pink); font-weight: 800;">1M+</h3>
+          <p style="font-size: 13px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--text-muted); margin-top: 4px;">Glam Queens Worldwide</p>
+        </div>
+        <div>
+          <h3 style="font-family: var(--font-serif); font-size: 40px; color: var(--hot-pink); font-weight: 800;">45+</h3>
+          <p style="font-size: 13px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--text-muted); margin-top: 4px;">Global Beauty Trophies</p>
+        </div>
+        <div>
+          <h3 style="font-family: var(--font-serif); font-size: 40px; color: var(--hot-pink); font-weight: 800;">100%</h3>
+          <p style="font-size: 13px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--text-muted); margin-top: 4px;">Vegan & Cruelty Free</p>
+        </div>
+        <div>
+          <h3 style="font-family: var(--font-serif); font-size: 40px; color: var(--hot-pink); font-weight: 800;">98%</h3>
+          <p style="font-size: 13px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--text-muted); margin-top: 4px;">Skin-Loving Ingredients</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Luxury Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="home.html" class="navbar-brand">
+            <span class="logo-youre">YOU'RE</span> <span class="logo-makeup">MAKEUP</span>
+          </a>
+          <p class="brand-bio">
+            High-fashion, uncompromising luxury cosmetics created for the unapologetic beauty visionary. Formulated in Paris and Los Angeles.
+          </p>
+          <div class="social-links-row" style="margin-top: 20px; padding-top: 0; border: none;">
+            <a href="#" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-btn" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" class="social-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="social-btn" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Glam Vault</h4>
+          <ul class="footer-links">
+            <li><a href="shop.html">Lip Couture</a></li>
+            <li><a href="shop.html">Eye Palettes</a></li>
+            <li><a href="shop.html">Complexion & Radiance</a></li>
+            <li><a href="shop.html">Vegan Brush Sets</a></li>
+            <li><a href="shop.html">Limited Edition 2026</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Maison</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="about.html">Clean Beauty Promise</a></li>
+            <li><a href="contact.html">Store Locator</a></li>
+            <li><a href="contact.html">Press & Media</a></li>
+            <li><a href="contact.html">Careers at You're Makeup</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">VIP Concierge</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html">Order Status & Tracking</a></li>
+            <li><a href="contact.html">Shipping & Returns</a></li>
+            <li><a href="contact.html">Shade Matching Specialist</a></li>
+            <li><a href="index.html">My VIP Account</a></li>
+            <li><a href="contact.html">Live Beauty Advisory</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 YOU'RE MAKEUP Haute Parfumerie & Cosmétique. All Rights Reserved.</p>
+        <div class="footer-payment-icons">
+          <i class="fa-brands fa-cc-visa"></i>
+          <i class="fa-brands fa-cc-mastercard"></i>
+          <i class="fa-brands fa-cc-amex"></i>
+          <i class="fa-brands fa-cc-apple-pay"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cart Drawer Component -->
+  <div class="cart-drawer-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Cart Drawer">
+    <div class="cart-drawer-header">
+      <div class="cart-drawer-title">
+        <i class="fa-solid fa-bag-shopping" style="color: var(--hot-pink);"></i>
+        <span>YOUR GLAM BAG</span>
+      </div>
+      <button class="cart-close-btn" id="closeCartBtn" aria-label="Close cart">&times;</button>
+    </div>
+
+    <!-- Free Shipping Progress -->
+    <div style="padding: 15px 24px 5px; border-bottom: 1px solid rgba(255,255,255,0.06);">
+      <div class="shipping-meter-wrap">
+        <div class="shipping-meter-text">
+          <i class="fa-solid fa-wand-magic-sparkles" style="color: var(--hot-pink); margin-right: 6px;"></i>
+          <strong>Unlocked:</strong> Complimentary VIP Express Shipping!
+        </div>
+        <div class="shipping-bar-bg">
+          <div class="shipping-bar-fill" style="width: 100%;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cart Items list -->
+    <div class="cart-drawer-items" id="cartItemsContainer">
+      <!-- Injected by JavaScript -->
+    </div>
+
+    <!-- Cart Footer -->
+    <div class="cart-drawer-footer">
+      <div class="cart-calc-row">
+        <span>Estimated Subtotal</span>
+        <span id="cartSubtotal" style="color: #fff; font-weight: 600;">$102.00</span>
+      </div>
+      <div class="cart-calc-row">
+        <span>VIP Express Shipping</span>
+        <span style="color: #2ed573; font-weight: 600;">FREE</span>
+      </div>
+      <div class="cart-calc-row total">
+        <span>Estimated Total</span>
+        <span class="total-amount" id="cartTotal">$102.00</span>
+      </div>
+      <button class="btn btn-primary btn-block" style="margin-top: 15px;" onclick="alert('Proceeding to VIP Encrypted Checkout! Thank you for choosing You\'re Makeup.')">
+        <i class="fa-solid fa-lock" style="font-size: 13px;"></i> Proceed to Checkout
+      </button>
+      <p style="text-align: center; font-size: 11px; color: var(--text-dim); margin-top: 10px;">
+        30-Day Luxury Happiness Guarantee &middot; Free Returns
+      </p>
+    </div>
+  </aside>
+
+  <!-- Global Toast Notification -->
+  <div class="toast-notice" id="toastNotice">
+    <i class="fa-solid fa-sparkles"></i>
+    <span id="toastMessage">Glam item added to your bag!</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

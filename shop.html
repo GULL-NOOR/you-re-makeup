@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Glamour Vault | You're Makeup Luxury Shop</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement">
+    <span class="sparkle">✦</span>
+    <span>COMPLIMENTARY VIP SHIPPING ON ORDERS $50+ & SECRET SAMPLES WITH EVERY DROP</span>
+    <span class="sparkle">✦</span>
+  </div>
+
+  <!-- PREMIUM NAVBAR -->
+  <header class="navbar">
+    <div class="nav-container">
+      <!-- Left: Logo -->
+      <a href="home.html" class="navbar-brand">
+        <span class="logo-youre">YOU'RE</span>
+        <span class="logo-makeup">MAKEUP</span>
+      </a>
+
+      <!-- Center: Menu Links -->
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="home.html" class="nav-link">Home</a></li>
+          <li><a href="shop.html" class="nav-link active">Shop</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right: Icons Section -->
+      <div class="nav-actions">
+        <!-- Search bar -->
+        <div class="nav-search-wrapper">
+          <input type="text" class="nav-search-input" placeholder="Search glam..." aria-label="Search glam">
+          <button class="nav-search-btn" aria-label="Search button"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <!-- Wishlist icon -->
+        <a href="shop.html" class="nav-icon-btn wishlist-btn" title="View Wishlist">
+          <i class="fa-regular fa-heart"></i>
+          <span class="wishlist-dot"></span>
+        </a>
+
+        <!-- Cart icon -->
+        <button class="nav-icon-btn cart-btn" title="Shopping Bag" aria-label="Shopping Bag">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-badge">2</span>
+        </button>
+
+        <!-- User / Login icon -->
+        <a href="index.html" class="user-btn" title="VIP Account / Sign In" aria-label="VIP Account">
+          <i class="fa-solid fa-user"></i>
+        </a>
+
+        <!-- Mobile Hamburger button -->
+        <button class="hamburger-btn" aria-label="Toggle Navigation">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Slide-In Menu Drawer -->
+  <div class="mobile-drawer-overlay"></div>
+  <aside class="mobile-nav-drawer">
+    <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,20,147,0.3); padding-bottom: 15px;">
+      <a href="home.html" class="navbar-brand">
+        <span class="logo-youre">YOU'RE</span> <span class="logo-makeup">MAKEUP</span>
+      </a>
+    </div>
+
+    <!-- Mobile Search -->
+    <div class="nav-search-wrapper" style="display: flex; width: 100%;">
+      <input type="text" class="nav-search-input" style="width: 100%;" placeholder="Search glam...">
+      <button class="nav-search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+
+    <ul class="mobile-nav-links">
+      <li><a href="home.html" class="mobile-nav-link"><span>Home</span> <i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i></a></li>
+      <li><a href="shop.html" class="mobile-nav-link active"><span>Shop</span> <i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i></a></li>
+      <li><a href="about.html" class="mobile-nav-link"><span>About Us</span> <i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i></a></li>
+      <li><a href="contact.html" class="mobile-nav-link"><span>Contact Us</span> <i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i></a></li>
+      <li><a href="index.html" class="mobile-nav-link"><span>VIP Sign In / Register</span> <i class="fa-solid fa-user" style="font-size: 12px; color: var(--hot-pink);"></i></a></li>
+    </ul>
+
+    <div style="margin-top: auto; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); font-size: 12px; color: var(--text-dim); text-align: center;">
+      <p style="color: var(--hot-pink); font-weight: 600; margin-bottom: 4px;">YOU'RE MAKEUP &copy; 2026</p>
+      <p>Luxury Glamour Redefined</p>
+    </div>
+  </aside>
+
+  <!-- Shop Page Header -->
+  <section class="shop-page-header">
+    <div class="container">
+      <span class="section-tagline">Exquisite Formulas</span>
+      <h1 class="section-title">The <span>Glamour Vault</span></h1>
+      <p class="section-desc">Immerse yourself in our complete collection of haute-pigment, cruelty-free cosmetics crafted for timeless allure.</p>
+    </div>
+  </section>
+
+  <!-- Shop Main Section -->
+  <main class="shop-container">
+    <div class="container">
+      <div class="shop-layout">
+
+        <!-- Filter Sidebar -->
+        <aside class="shop-sidebar">
+          <div class="sidebar-title">
+            <span>Refine By</span>
+            <span class="filter-reset-link" id="resetFiltersBtn">Reset All</span>
+          </div>
+
+          <!-- Category Filter -->
+          <div class="filter-group">
+            <h4 class="filter-group-heading">Categories</h4>
+            <div class="filter-list">
+              <div class="filter-item active" data-category="all">
+                <span>All Vault Items</span>
+                <span class="count">12</span>
+              </div>
+              <div class="filter-item" data-category="lips">
+                <span>Lips Couture</span>
+                <span class="count">3</span>
+              </div>
+              <div class="filter-item" data-category="eyes">
+                <span>Eyes & Brows</span>
+                <span class="count">3</span>
+              </div>
+              <div class="filter-item" data-category="face">
+                <span>Complexion & Glow</span>
+                <span class="count">4</span>
+              </div>
+              <div class="filter-item" data-category="brushes">
+                <span>Brushes & Suites</span>
+                <span class="count">2</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Price Range Filter -->
+          <div class="filter-group">
+            <h4 class="filter-group-heading">Maximum Price</h4>
+            <input type="range" class="price-range-slider" id="priceRangeSlider" min="20" max="85" value="85" step="5">
+            <div class="price-range-labels">
+              <span>$20</span>
+              <span id="maxPriceDisplay" style="color: var(--hot-pink); font-weight: 700;">$85</span>
+              <span>$85</span>
+            </div>
+          </div>
+
+          <!-- Finish / Formula Filter -->
+          <div class="filter-group">
+            <h4 class="filter-group-heading">Finish / Formula</h4>
+            <div class="filter-list">
+              <label class="form-checkbox-label" style="margin-bottom: 8px;">
+                <input type="checkbox" checked style="accent-color: var(--hot-pink);"> Velvet Matte (5)
+              </label>
+              <label class="form-checkbox-label" style="margin-bottom: 8px;">
+                <input type="checkbox" checked style="accent-color: var(--hot-pink);"> Dewy Luminescent (4)
+              </label>
+              <label class="form-checkbox-label" style="margin-bottom: 8px;">
+                <input type="checkbox" checked style="accent-color: var(--hot-pink);"> High-Shine Vinyl (3)
+              </label>
+            </div>
+          </div>
+
+          <!-- Luxury Perks Banner in Sidebar -->
+          <div style="background: rgba(255, 20, 147, 0.08); border: 1px solid rgba(255, 20, 147, 0.25); border-radius: 8px; padding: 16px; text-align: center; margin-top: 15px;">
+            <i class="fa-solid fa-gift" style="color: var(--hot-pink); font-size: 22px; margin-bottom: 8px;"></i>
+            <h5 style="font-size: 13px; color: var(--white); margin-bottom: 4px;">Complimentary Gift</h5>
+            <p style="font-size: 11px; color: var(--blush); line-height: 1.4;">Receive our deluxe mini lip oil on all orders over $75.</p>
+          </div>
+        </aside>
+
+        <!-- Product Grid Area -->
+        <section class="shop-content-area">
+          <!-- Controls Bar -->
+          <div class="shop-controls-bar">
+            <div class="results-count">
+              Showing <strong id="resultsCount">12</strong> Luxury Formulations
+            </div>
+            <div class="shop-sort-wrap">
+              <label for="sortSelect" class="shop-sort-label">Sort by:</label>
+              <select id="sortSelect" class="sort-select">
+                <option value="featured">Featured Collection</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+                <option value="name">Product Name (A-Z)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- 12 Products Grid -->
+          <div class="shop-grid-3col" id="shopProductsGrid">
+            
+            <!-- 1. Velvet Siren Matte Lipstick -->
+            <article class="product-card" data-id="1" data-category="lips" data-price="34">
+              <div class="product-img-box">
+                <span class="product-badge-tag">Bestseller</span>
+                <button class="product-wishlist-btn" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=600&q=80" alt="Velvet Siren Matte Lipstick">
+              </div>
+              <div class="product-info-box">
+                <span class="product-category-sub">Lip Couture</span>
+                <h3 class="product-title">Velvet Siren Matte Lipstick</h3>
+                <div class="product-rating">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  <span class="review-count">(1,840)</span>
+                </div>
+                <div class="product-price-row">
+                  <span class="product-current-price">$34.00</span>
+                  <span class="product-old-price">$42.00</span>
+                </div>
+                <button class="btn btn-add-cart">
+                  <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                </button>
+              </div>
+            </article>
+
+            <!-- 2. Starlight 18-Shade Chromatic Palette -->
+            <article class="product-card" data-id="2" data-category="eyes" data-price="68">
+              <div class="product-img-box">
+                <span class="product-badge-tag">Viral Drop</span>
+                <button class="product-wishlist-btn" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=600&q=80" alt="Starlight Chromatic Palette">
+              </div>
+              <div class="product-info-box">
+                <span class="product-category-sub">Eye Couture</span>
+                <h3 class="product-title">Starlight Chromatic Palette</h3>
+                <div class="product-rating">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  <span class="review-count">(2,410)</span>
+                </div>
+                <div class="product-price-row">
+                  <span class="product-current-price">$68.00</span>
+                  <span class="product-old-price">$78.00</span>
+                </div>
+                <button class="btn btn-add-cart">
+                  <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                </button>
+              </div>
+            </article>
+
+            <!-- 3. Glass Skin Liquid Lumizer Foundation -->
+            <article class="product-card" data-id="3" data-category="face" data-price="46">
+              <div class="product-img-box">
+                <span class="product-badge-tag">Award Winner</span>
+                <button class="product-wishlist-btn" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=600&q=80" alt="Glass Skin Liquid Lumizer Foundation">
+              </div>
+              <div class="product-info-box">
+                <span class="product-category-sub">Complexion</span>
+                <h3 class="product-title">Glass Skin Liquid Lumizer</h3>
+                <div class="product-rating">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                  <span class="review-count">(980)</span>
+                </div>
+                <div class="product-price-row">
+                  <span class="product-current-price">$46.00</span>
+                  <span class="product-old-price">$54.00</span>
+                </div>
+                <button class="btn btn-add-cart">
+                  <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                </button>
+              </div>
+            </article>
+
+            <!-- 4. 24K Gold Infused Lip Plumping Oil -->
+            <article class="product-card" data-id="4" data-category="lips" data-price="28">
+              <div class="product-img-box">
+                <span class="product-badge-tag">Limited</span>
+                <button class="product-wishlist-btn" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=600&q=80" alt="24K Gold Infused Lip Plumping Oil">
+              </div>
+              <div class="product-info-box">
+                <span class="product-category-sub">Lip Care</span>
+                <h3 class="product-title">24K Gold Lip Plumping Oil</h3>
+                <div class="product-rating">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  <span class="review-count">(3,120)</span>
+                </div>
+                <div class="product-price-row">
+                  <span class="product-current-price">$28.00</span>
+                  <span class="product-old-price">$36.00</span>
+                </div>
+                <button class="btn btn-add-cart">
+                  <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                </button>
+              </div>
+            </article>
+
+            <!-- 5. Iconic Wing Precision Liquid Eyeliner -->
+            <article class="product-card" data-id="5" data-category="eyes" data-price="22">
+              <div class="product-img-box">
+                <span class="product-badge-tag">Waterproof</span>
+                <button class="product-wishlist-btn" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <img src="https://images.unsplash.com/photo-1631729371254-42c2892f0e6e?auto=format&fit=crop&w=600&q=80" alt="Iconic Wing Precision Liquid Eyeliner">
+              </div>
+              <div class="product-info-box">
+                <span class="product-category-sub">Eye Couture</span>
+                <h3 class="product-title">Iconic Wing Precision Eyeliner</h3>
+                <div class="product-rating">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  <span class="review-count">(1,120)</span>
+                </div>
+                <div class="product-price-row">
+                  <span class="product-current-price">$22.00</span>
+                  <span class="product-old-price">$28.00</span>
+                </div>
+                <button class="btn btn-add-cart">
+                  <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                </button>
+              </div>
+            </article>
+
+            <!-- 6. Velvet Petal Soft-Matte Blush Trio -->
+            <article class="product-card" data-id="6" data-category="face" data-price="38">
+              <div class="product-img-box">
+                <span class="product-badge-tag">New Season</span>
+                <button class="product-wishlist-btn" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=600&q=80" alt="Velvet Petal Soft-Matte Blush Trio">
+              </div>
+              <div class="product-info-box">
+                <span class="product-category-sub">Cheek Radiance</span>
+                <h3 class="product-title">Velvet Petal Soft Blush Trio</h3>
+                <div class="product-rating">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                  <span class="review-count">(890)</span>
+                </div>
+                <div class="product-price-row">
+                  <span class="product-current-price">$38.00</span>
+                  <span class="product-old-price">$45.00</span>
+                </div>
+                <button class="btn btn-add-cart">
+                  <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                </button>
+              </div>
+            </article>
+
+            <!-- 7. Diamond Glow Baked Highlighter -->
+            <article class="product-card" data-id="7" data-category="face" data-price="42">
+              <div class="product-img-box">
+                <span class="product-badge-tag">Luminous</span>
+                <button class="product-wishlist-btn" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <img src="https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=600&q=80" alt="Diamond Glow Baked Highlighter">
+              </div>
+              <div class="product-info-box">
+                <span class="product-category-sub">Luminizer</span>
+                <h3 class="product-title">Diamond Glow Baked Highlighter</h3>
+                <div class="product-rating">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  <span class="review-count">(1,670)</span>
+                </div>
+                <div class="product-price-row">
+                  <span class="product-current-price">$42.00</span>
+                  <span class="product-old-price">$50.00</span>
+                </div>
+                <button class="btn btn-add-cart">
+                  <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                </button>
+              </div>
+            </article>
+
+            <!-- 8. Sculpt & Define 10-Piece Vegan Brush Set -->
+            <article class="product-card" data-id="8" data-category="brushes" data-price="75">
+              <div class="product-img-box">
+                <span class="product-badge-tag">Pro Suite</span>
+                <button class="product-wishlist-btn" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80" alt="Sculpt & Define 10-Piece Vegan Brush Set">
+              </div>
+              <div class="product-info-box">
+                <span class="product-category-sub">Glam Tools</span>
+                <h3 class="product-title">Sculpt & Define 10-Pc Brush Set</h3>
+                <div class="product-rating">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  <span class="review-count">(740)</span>
+                </div>
+                <div class="product-price-row">
+                  <span class="product-current-price">$75.00</span>
+                  <span class="product-old-price">$95.00</span>
+                </div>
+                <button class="btn btn-add-cart">
+                  <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                </button>
+              </div>
+            </article>
+
+            <!-- 9. Rose Quartz Hydrating Setting Mist -->
+            <article class="product-card" data-id="9" data-category="face" data-price="30">
+              <div class="product-img-box">
+                <span class="product-badge-tag">Hydrating</span>
+                <button class="product-wishlist-btn" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7gUeFXBZ_Su-eBM4O6fMpnuRMs4aXKfzQHm-pf3P3oA&s=10" alt="Rose Quartz Hydrating Setting Mist">
+              </div>
+              <div class="product-info-box">
+                <span class="product-category-sub">Setting Mist</span>
+                <h3 class="product-title">Rose Quartz Setting Mist</h3>
+                <div class="product-rating">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                  <span class="review-count">(1,040)</span>
+                </div>
+                <div class="product-price-row">
+                  <span class="product-current-price">$30.00</span>
+                  <span class="product-old-price">$38.00</span>
+                </div>
+                <button class="btn btn-add-cart">
+                  <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                </button>
+              </div>
+            </article>
+
+            <!-- 10. Midnight Noir Volumizing Fiber Mascara -->
+            <article class="product-card" data-id="10" data-category="eyes" data-price="26">
+              <div class="product-img-box">
+                <span class="product-badge-tag">Mega Volume</span>
+                <button class="product-wishlist-btn" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjZ4cXFRf0jPy3ayvILPThhrkbiwRAk9tZ9fjCN0Jj9g&s=10" alt="Midnight Noir Volumizing Fiber Mascara">
+              </div>
+              <div class="product-info-box">
+                <span class="product-category-sub">Eye Couture</span>
+                <h3 class="product-title">Midnight Noir Fiber Mascara</h3>
+                <div class="product-rating">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  <span class="review-count">(2,250)</span>
+                </div>
+                <div class="product-price-row">
+                  <span class="product-current-price">$26.00</span>
+                  <span class="product-old-price">$32.00</span>
+                </div>
+                <button class="btn btn-add-cart">
+                  <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                </button>
+              </div>
+            </article>
+
+            <!-- 11. Silk Veil Pore-Blurring Finishing Powder -->
+            <article class="product-card" data-id="11" data-category="face" data-price="44">
+              <div class="product-img-box">
+                <span class="product-badge-tag">Oil-Control</span>
+                <button class="product-wishlist-btn" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <img src="https://images.unsplash.com/photo-1503236823255-94609f598e71?auto=format&fit=crop&w=600&q=80" alt="Silk Veil Pore-Blurring Finishing Powder">
+              </div>
+              <div class="product-info-box">
+                <span class="product-category-sub">Finishing Powder</span>
+                <h3 class="product-title">Silk Veil Finishing Powder</h3>
+                <div class="product-rating">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  <span class="review-count">(1,430)</span>
+                </div>
+                <div class="product-price-row">
+                  <span class="product-current-price">$44.00</span>
+                  <span class="product-old-price">$52.00</span>
+                </div>
+                <button class="btn btn-add-cart">
+                  <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                </button>
+              </div>
+            </article>
+
+            <!-- 12. Cherry Glaze Vinyl High-Shine Lip Stain -->
+            <article class="product-card" data-id="12" data-category="lips" data-price="29">
+              <div class="product-img-box">
+                <span class="product-badge-tag">Gloss Glaze</span>
+                <button class="product-wishlist-btn" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <img src="https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?auto=format&fit=crop&w=600&q=80" alt="Cherry Glaze Vinyl High-Shine Lip Stain">
+              </div>
+              <div class="product-info-box">
+                <span class="product-category-sub">Lip Stain</span>
+                <h3 class="product-title">Cherry Glaze Vinyl Lip Stain</h3>
+                <div class="product-rating">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  <span class="review-count">(1,910)</span>
+                </div>
+                <div class="product-price-row">
+                  <span class="product-current-price">$29.00</span>
+                  <span class="product-old-price">$35.00</span>
+                </div>
+                <button class="btn btn-add-cart">
+                  <i class="fa-solid fa-bag-shopping"></i> Add to Cart
+                </button>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Luxury Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="home.html" class="navbar-brand">
+            <span class="logo-youre">YOU'RE</span> <span class="logo-makeup">MAKEUP</span>
+          </a>
+          <p class="brand-bio">
+            High-fashion, uncompromising luxury cosmetics created for the unapologetic beauty visionary. Formulated in Paris and Los Angeles.
+          </p>
+          <div class="social-links-row" style="margin-top: 20px; padding-top: 0; border: none;">
+            <a href="#" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-btn" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" class="social-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="social-btn" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Glam Vault</h4>
+          <ul class="footer-links">
+            <li><a href="shop.html">Lip Couture</a></li>
+            <li><a href="shop.html">Eye Palettes</a></li>
+            <li><a href="shop.html">Complexion & Radiance</a></li>
+            <li><a href="shop.html">Vegan Brush Sets</a></li>
+            <li><a href="shop.html">Limited Edition 2026</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Maison</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="about.html">Clean Beauty Promise</a></li>
+            <li><a href="contact.html">Store Locator</a></li>
+            <li><a href="contact.html">Press & Media</a></li>
+            <li><a href="contact.html">Careers at You're Makeup</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">VIP Concierge</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html">Order Status & Tracking</a></li>
+            <li><a href="contact.html">Shipping & Returns</a></li>
+            <li><a href="contact.html">Shade Matching Specialist</a></li>
+            <li><a href="index.html">My VIP Account</a></li>
+            <li><a href="contact.html">Live Beauty Advisory</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 YOU'RE MAKEUP Haute Parfumerie & Cosmétique. All Rights Reserved.</p>
+        <div class="footer-payment-icons">
+          <i class="fa-brands fa-cc-visa"></i>
+          <i class="fa-brands fa-cc-mastercard"></i>
+          <i class="fa-brands fa-cc-amex"></i>
+          <i class="fa-brands fa-cc-apple-pay"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cart Drawer Component -->
+  <div class="cart-drawer-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Cart Drawer">
+    <div class="cart-drawer-header">
+      <div class="cart-drawer-title">
+        <i class="fa-solid fa-bag-shopping" style="color: var(--hot-pink);"></i>
+        <span>YOUR GLAM BAG</span>
+      </div>
+      <button class="cart-close-btn" id="closeCartBtn" aria-label="Close cart">&times;</button>
+    </div>
+
+    <!-- Free Shipping Progress -->
+    <div style="padding: 15px 24px 5px; border-bottom: 1px solid rgba(255,255,255,0.06);">
+      <div class="shipping-meter-wrap">
+        <div class="shipping-meter-text">
+          <i class="fa-solid fa-wand-magic-sparkles" style="color: var(--hot-pink); margin-right: 6px;"></i>
+          <strong>Unlocked:</strong> Complimentary VIP Express Shipping!
+        </div>
+        <div class="shipping-bar-bg">
+          <div class="shipping-bar-fill" style="width: 100%;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cart Items list -->
+    <div class="cart-drawer-items" id="cartItemsContainer">
+      <!-- Injected by JavaScript -->
+    </div>
+
+    <!-- Cart Footer -->
+    <div class="cart-drawer-footer">
+      <div class="cart-calc-row">
+        <span>Estimated Subtotal</span>
+        <span id="cartSubtotal" style="color: #fff; font-weight: 600;">$102.00</span>
+      </div>
+      <div class="cart-calc-row">
+        <span>VIP Express Shipping</span>
+        <span style="color: #2ed573; font-weight: 600;">FREE</span>
+      </div>
+      <div class="cart-calc-row total">
+        <span>Estimated Total</span>
+        <span class="total-amount" id="cartTotal">$102.00</span>
+      </div>
+      <button class="btn btn-primary btn-block" style="margin-top: 15px;" onclick="alert('Proceeding to VIP Encrypted Checkout! Thank you for choosing You\'re Makeup.')">
+        <i class="fa-solid fa-lock" style="font-size: 13px;"></i> Proceed to Checkout
+      </button>
+      <p style="text-align: center; font-size: 11px; color: var(--text-dim); margin-top: 10px;">
+        30-Day Luxury Happiness Guarantee &middot; Free Returns
+      </p>
+    </div>
+  </aside>
+
+  <!-- Global Toast Notification -->
+  <div class="toast-notice" id="toastNotice">
+    <i class="fa-solid fa-sparkles"></i>
+    <span id="toastMessage">Glam item added to your bag!</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

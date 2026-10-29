@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIP Access | You're Makeup Luxury Cosmetics</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="auth-page-wrapper">
+    <div class="auth-overlay"></div>
+
+    <div class="auth-card">
+      <div class="auth-logo-header">
+        <a href="home.html" class="navbar-brand" style="justify-content: center; display: inline-flex;">
+          <span class="logo-youre">YOU'RE</span>
+          <span class="logo-makeup">MAKEUP</span>
+        </a>
+        <p class="auth-subhead">High-Glam VIP Portal &bull; New Glam 2026</p>
+      </div>
+
+      <!-- Tabs: Sign In / Create Account -->
+      <div class="auth-tabs">
+        <button type="button" class="auth-tab-btn active" data-tab="signin">Sign In</button>
+        <button type="button" class="auth-tab-btn" data-tab="signup">Create VIP Account</button>
+      </div>
+
+      <!-- Auth Form -->
+      <form id="loginForm">
+        <div class="form-group">
+          <label class="form-label" for="loginEmail">Glamour ID / Email Address</label>
+          <div class="form-input-wrapper">
+            <i class="fa-regular fa-envelope input-icon"></i>
+            <input type="email" id="loginEmail" class="form-input" placeholder="queen@youremakeup.com" value="vip.queen@youremakeup.com" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="loginPassword">Secret Password</label>
+          <div class="form-input-wrapper">
+            <i class="fa-solid fa-lock input-icon"></i>
+            <input type="password" id="loginPassword" class="form-input" placeholder="••••••••••••" value="luxuryglam2026" required>
+          </div>
+        </div>
+
+        <div class="form-row-between">
+          <label class="form-checkbox-label">
+            <input type="checkbox" checked style="accent-color: var(--hot-pink);"> Remember my beauty profile
+          </label>
+          <a href="#" class="form-link-pink" onclick="alert('Password reset link sent to your email.'); return false;">Forgot Pass?</a>
+        </div>
+
+        <button type="submit" id="authSubmitBtn" class="btn btn-primary btn-block">
+          <i class="fa-solid fa-sparkles"></i> Sign In & Enter Glam
+        </button>
+      </form>
+
+      <div class="auth-divider">
+        <span>Or Enter Instantly</span>
+      </div>
+
+      <!-- Social Login Buttons -->
+      <div class="social-login-grid">
+        <button type="button" class="btn-social" onclick="window.location.href='home.html'">
+          <i class="fa-brands fa-google" style="color: #ea4335;"></i> Google VIP
+        </button>
+        <button type="button" class="btn-social" onclick="window.location.href='home.html'">
+          <i class="fa-brands fa-apple"></i> Apple ID
+        </button>
+      </div>
+
+      <!-- Guest Access Link -->
+      <a href="home.html" class="guest-btn">
+        <i class="fa-solid fa-arrow-right-long" style="color: var(--hot-pink);"></i> Continue as Guest to <strong>You're Makeup</strong>
+      </a>
+    </div>
+  </div>
+
+  <!-- Global Toast Notification -->
+  <div class="toast-notice" id="toastNotice">
+    <i class="fa-solid fa-sparkles"></i>
+    <span id="toastMessage">Welcome back, Glam Queen!</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
